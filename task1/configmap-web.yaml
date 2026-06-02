@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: web-content
+  namespace: default
+data:
+  index.html: |
+    <!DOCTYPE html>
+    <html>
+    <head><title>Моя страница из ConfigMap</title></head>
+    <body>
+      <h1>Привет от Kubernetes!</h1>
+      <p>Эта страница подгружена через ConfigMap.</p>
+    </body>
+    </html>
